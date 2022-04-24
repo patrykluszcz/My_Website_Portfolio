@@ -3,14 +3,7 @@
 @use '../constants/font-face' as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
-#home{
-    position: relative;
-    height: 100vh;
-    background: url("../images/background-g7a54a3368_1920.png");
-    background-size: cover;
-    background-position: 0 -200px;
-    z-index: 1;
-}
+
 
 .hero-shadow{
 
@@ -19,18 +12,6 @@
     background-color: rgba(0,0,0,.7);
     z-index: -1;
 }
-
-.navigation{
-    position: fixed;
-    background: transparent;
-    width: 100%;
-}
-
-.navigation.active{
-    background-color: black;
-    z-index: 1;
-}
-
 
 .navbar-nav{
     display: flex;
@@ -85,61 +66,6 @@
 }
 
 
-.header_container{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.header_title{
-    font-family: "Prometheus";
-    color: $font-color;
-    font-size: 70px;
-    text-shadow: 1px 1px 1px #919191,
-    1px 2px 1px #919191,
-    1px 3px 1px #919191,
-    1px 4px 1px #919191,
-    1px 5px 1px #919191,
-    1px 6px 1px #919191,
-    1px 7px 1px #919191,
-    1px 8px 1px #919191,
-    1px 9px 1px #919191,
-    1px 10px 1px #919191;
-    font-weight: bold;
-}
-
-.title_links{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}
-
-.header_links{
-    display: flex;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-      
-    .github_link, 
-    .linkedin_link{
-        font-size: 30px;
-        border: 1px solid white;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px #fff;
-
-                
-        .bi-github, 
-        .bi-linkedin{
-            display: block;
-            color: $font-color;
-            padding: 20px 30px 20px 30px;           
-        }               
-    }
-}
 
 .github_link{
     margin-right: 25px;    

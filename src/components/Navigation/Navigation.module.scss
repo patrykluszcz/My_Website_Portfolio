@@ -1,0 +1,10 @@
+.navbar {
+    position: fixed;
+    background: transparent;
+    width: 100%;
+
+    &Active {
+        background-color: black;
+        z-index: 1;
+    }
+}
