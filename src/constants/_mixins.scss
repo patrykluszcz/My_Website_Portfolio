@@ -1,32 +1,42 @@
 @use "../constants/colors" as *;
 @use "../constants/font-face" as *;
 
-@mixin position ($type, $left, $width, $height){
-    position: $type;
-    left: $left;
-    width: $width;
-    height: $height;
+@mixin position($type, $left, $width, $height) {
+  position: $type;
+  left: $left;
+  width: $width;
+  height: $height;
 }
 
-@mixin titleStyles (){
-    display: block;
-    padding: 100px 0 100px 0;
-    color: $font-color;
-    font-family: "Prometheus";
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 33px;
-
+@mixin titleStyles() {
+  display: block;
+  padding: 100px 0 100px 0;
+  color: $font-color;
+  font-family: "Prometheus";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 33px;
 }
 
-@mixin button($margin, $padding){
+@mixin button($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+  background-color: transparent;
+  color: $font-color;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 17px;
+  cursor: pointer;
+}
 
-    margin: $margin;
-    padding: $padding;
-    background-color: transparent;
-    color: $font-color;
-    border: 1px solid white;
-    border-radius: 15px;
-    font-size: 17px;
-    cursor: pointer;
+@mixin navLink() {
+  position: relative;
+  margin-left: 50px;
+  width: 100px;
+  padding: 40px 0 10px 0;
+  font-size: 15px;
+  font-family: "Prometheus", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $font-color;
 }

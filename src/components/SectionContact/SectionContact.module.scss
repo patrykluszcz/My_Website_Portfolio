@@ -1,0 +1,76 @@
+@use "../../constants/colors" as *;
+@use "../../constants/mixins" as *;
+@use "../../constants/font-face" as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+.container {
+  width: 100%;
+  height: 75vh;
+  background-color: #03060c;
+}
+
+.title {
+  @include titleStyles;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  margin-right: 20em;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.form_control {
+  border-radius: 20px;
+  box-shadow: 0 0 13px;
+  font-size: 18px;
+  padding: 15px 350px 15px 15px;
+}
+
+.btn {
+  @include button(0 0 0 470px, 15px 35px);
+  box-shadow: 0 0 13px;
+}
+
+.contact_info {
+  display: flex;
+  color: $font-color;
+  margin: 10px;
+}
+
+.contact_adress {
+  margin: 50px;
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 20px;
+
+    .icon_geo {
+      color: red;
+    }
+
+    .icon_phone {
+      color: greenyellow;
+    }
+
+    .icon_email {
+      color: blue;
+    }
+  }
+}
+
+.image img {
+  border-radius: 150px;
+  width: 300px;
+  height: 300px;
+}
